@@ -33,7 +33,7 @@ export const MENU_ITEMS = [
     id: 6,
     name: "Breve",
     price: 3.25,
-    desc: "Espresso, steamed half-and-half, and vanilla syrup",
+    desc: "Espresso, steamed half-and-half, and vanilla syrup and vanilla syrup",
   },
   {
     id: 7,

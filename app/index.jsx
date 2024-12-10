@@ -15,11 +15,18 @@ export default function app() {
     <View style={styles.container}>
       <ImageBackground source={img2} resizeMode="cover" style={styles.imageBg}>
         <Text style={styles.text}>Kofee Café</Text>
-        <Link href="/explore" style={{marginHorizontal: 'auto'}} asChild>
-          <Pressable style={styles.button}>
-            <Text style={styles.btnText}>Explore</Text>
-          </Pressable>
-        </Link>
+        <View >
+          <Link href="/explore" style={{ marginHorizontal: "auto" }} asChild>
+            <Pressable style={styles.button}>
+              <Text style={styles.btnText}>Explore</Text>
+            </Pressable>
+          </Link>
+          <Link href="/contact" style={{ marginHorizontal: "auto" }} asChild>
+            <Pressable style={styles.button}>
+              <Text style={styles.btnText}>Contact Us</Text>
+            </Pressable>
+          </Link>
+        </View>
       </ImageBackground>
     </View>
   );
@@ -46,23 +53,25 @@ const styles = StyleSheet.create({
     textDecorationLine: "underline",
     padding: 4,
   },
-  button:{
-    height: 60,
+  button: {
+    height: 50,
     borderRadius: 20,
-    backgroundColor: 'rgba(0,0,0,0.75)',
-    padding: 6,
-    justifyContent: 'center'
+    backgroundColor: "rgba(0,0,0,0.75)",
+    paddingVertical: 4,
+    paddingHorizontal: 24,
+    marginVertical: 4,
+    justifyContent: "center",
   },
   btnText: {
     color: "white",
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: "bold",
     textAlign: "center",
-    padding: 4,
+
   },
   imageBg: {
     width: "100%",
-    justifyContent: "center",
+    justifyContent: "space-around",
     height: "100%",
     resizeMode: "cover",
     flex: 1,
